@@ -23,8 +23,7 @@ function Profile() {
             <div class="degree">
                 <img src={profile_degree} alt="Profile" />   
                 Bachelor in Technology in Information and Communication Technology
-            </div>
-            Profile
+            </div>            
         </div>
     );
   }

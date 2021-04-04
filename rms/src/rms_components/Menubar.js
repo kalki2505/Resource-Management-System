@@ -4,8 +4,19 @@ import menu_feed from '../rms_components/icons/menu_feed.png';
 import menu_search from '../rms_components/icons/menu_search.png';
 import menu_upload from '../rms_components/icons/menu_upload.png';
 import menu_notifications from '../rms_components/icons/menu_notifications.png';
+import menu_light_theme from '../rms_components/icons/menu_light_theme.png';
+import menu_dark_theme from '../rms_components/icons/menu_dark_theme.png';
+import menu_settings from '../rms_components/icons/menu_settings.png';
 
-function Menubar() {
+function Menubar(props) {
+    let theme_icon;
+    if(props.lightTheme==="1"){
+        theme_icon=menu_light_theme;
+    }else{
+        theme_icon=menu_dark_theme;
+    }
+
+
     return (
         <div className="menubar"> 
 
@@ -33,6 +44,14 @@ function Menubar() {
                 <div class="option">
                     <img src={menu_notifications} alt="icon" />
                     Notification
+                </div>
+                <div class="option">
+                    <img src={menu_settings}  id="theme" alt="icon" />  
+                    Settings               
+                </div>
+                <div class="option">
+                    <img src={theme_icon}  id="settings" alt="icon" />  
+                    Theme                 
                 </div>
             </div>            
         </div>
