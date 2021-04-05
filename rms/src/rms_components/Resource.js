@@ -1,14 +1,14 @@
 import '../rms_components/css_Resource.css';
 import AU1841029 from '../rms_components/user_profiles/AU1841029.png';
 
-
 function Resource(props) {    
     
     const theme={backgroundColor: props.lightTheme==="1" ?  "lightcyan": "black",
         color: props.lightTheme==="1" ? "black" : "lightcyan"};    
-
+    
+    
     return (
-        <div class="resource" >
+        <div class="resource" style={theme} >
             <div class="reso_header">
                 <div>
                     <img src={AU1841029} class="user_profile" alt="user-profile" />                 
@@ -35,7 +35,12 @@ function Resource(props) {
             </div>       
             <div class="reso_about">
                 {props.about}
-            </div>                         
+            </div>   
+
+           <div>                
+             preview pdf
+           </div>
+                           
         </div>
     );
     

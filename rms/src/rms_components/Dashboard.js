@@ -2,6 +2,7 @@ import '../rms_components/css_Dashboard.css';
 import Menubar from '../rms_components/Menubar';
 import Profile from '../rms_components/Profile';
 import Feed from '../rms_components/Feed';
+import Upload from '../rms_components/Upload';
 
 function Dashboard(props) {    
     const theme= {backgroundColor: props.lightTheme==="1" ?  "lightcyan": "black",
@@ -23,7 +24,8 @@ function Dashboard(props) {
                     <Profile/>
                 </div>
                 <div class="col2">
-                    <Feed lightTheme={props.lightTheme}/>
+                    
+                    <Upload />
                 </div>                                        
             </div>
 

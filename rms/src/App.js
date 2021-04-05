@@ -4,7 +4,7 @@ import Dashboard from './rms_components/Dashboard';
 function App() {
   return (
     <div className="App">
-      <Dashboard lightTheme="0"/>        
+      <Dashboard lightTheme="1"/>        
     </div>
   );
 }

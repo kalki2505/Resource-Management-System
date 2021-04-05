@@ -1,11 +1,11 @@
 .resource{
-    background-color: darkblue;
     height: 200px;
     width: 500px;
     margin-bottom: 20px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 4px 2px lightgray;   
 }
 
 .user_profile{
